@@ -25,7 +25,9 @@ public class SetAttributeFromFile {
 		System.out.println("File Header: " + recordInFile + "\n");
 
 		// Store the header fields to List
+		// Using java Arrays.asList 
 		// List<String> listOfFieldsInHeader = Arrays.asList(recordInFile.split(","));
+		// Using SailPoint convertStringToList method
 		List<String> listOfFieldsInHeader = Util.convertStringToList(recordInFile, ",");
 		System.out.println("List of Fields in Header: " + listOfFieldsInHeader.size() + "\n");
 
